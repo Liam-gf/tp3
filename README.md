@@ -32,8 +32,9 @@ synchroniser avec le dépôt distant. Chacun de nous à compléter sa partie. Al
 le dépôt distant, je l'ai récupérer. J'ai compilé et le test afficher le résultat voulu. Ensuite j'ai 
 mis l'ensemble des fichiers sur le dépôt distant et Alex les as récupérer.
 
+################
 
-## 3. Tester le concept de branche avec un exemple simple
+## 3.1 Tester le concept de branche avec un exemple simple
 
 
 Lorsque j'ai fais *git branch*, j'ai vu que j'étais dans le main.
@@ -48,12 +49,14 @@ Pour changer de branch, il faut faire la commande *git checkout `Nom de la branc
 
 Etant sur Windows, j'ai utliser la commande *New-Item test.txt -ItemType File* pour crée le fichier.
 
-J'ai validé les changements du dépôt local.
+J'ai validé les changements du dépôt local. Quand je suis retounée sur la branch main, je ne voyais 
+plus la branch test. En faisant *git log --graph --oneline --all --decorate --topo-order*. J'ai 
+vu qu'une fourcette a été produite.
+
+On se retrouve avec une branch principal (main), et une branch secondaire (test).
 
 
-
-
-
+#####################
 
 
 
