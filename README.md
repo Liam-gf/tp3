@@ -32,10 +32,11 @@ synchroniser avec le dépôt distant. Chacun de nous à compléter sa partie. Al
 le dépôt distant, je l'ai récupérer. J'ai compilé et le test afficher le résultat voulu. Ensuite j'ai 
 mis l'ensemble des fichiers sur le dépôt distant et Alex les as récupérer.
 
-################
 
-## 3.1 Tester le concept de branche avec un exemple simple
+## 3. Gérer des nouvelles fonctionnalités à l’aide des branches
 
+
+### 3.1 Tester le concept de branche avec un exemple simple
 
 Lorsque j'ai fais *git branch*, j'ai vu que j'étais dans le main.
 
@@ -55,36 +56,18 @@ vu qu'une fourcette a été produite.
 
 On se retrouve avec une branch principal (main), et une branch secondaire (test).
 
+### 3.2. Fusionner la branche de test dans la branche principale
 
-#####################
+On va dans la branch principal avec *git checkout main*.
 
+Pour fusionner deux branch il faut faire *git merge `Nom de la branch qu'il faut fusionner`*.
+Cette commande va fusionner la branch passer en paramètre avec la branch où on se trouve.
 
+Après avoir fusionner, si on fait *ls*, on voit que le contenue de la branch fusionner est 
+apparût au niveau où on se trouve.
 
+J'ai crée *AthosCoin.java* et Alex a crée *PorthosCoin.java*. Nous avons chacun fusionner la branch 
+crée avec notre branch main chacun de notre côté. Alex a *push* ses fichiers, j'ai ensuite *pull* pour 
+récupérer ses fichiers, j'ai *commit*, puis *push* mes fichiers sur le dépôt distant.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Désormais, les dépôt local et distant sont synchroniser.
